@@ -11,8 +11,9 @@ class customerList:
 
 	def connect(self):
 		#return pymysql.connect(host='mysql.clarksonmsda.org',port=3306,user='manoha',password='is437clarkson',db='manoha_is437',autocommit=True)
-
-		self.conn = pymysql.connect(host='mysql.clarksonmsda.org',port=3306,user='manoha',password='is437clarkson',db='manoha_is437',autocommit=True)
+		import config
+		self.conn = pymysql.connect(host=config.DB['host'],port=config.DB['port'],user=config.DB['user'],password=config.DB['password'],db=config.DB['db'],autocommit=True)
+		#self.conn = pymysql.connect(host='mysql.clarksonmsda.org',port=3306,user='manoha',password='is437clarkson',db='manoha_is437',autocommit=True)
 
 	def add(self):
 		#if len(self.tempdata) == len(self.fn1):
