@@ -14,7 +14,7 @@ cl.add()
 cl.add()
 print(cl.data)
 print(cl.data[0])
-#print(cl.data[0].['email'])
+print(cl.data[0]['email'])
 #print(cl.data[0].['email']) = dfdf@sdsdf.com
 cl.update(0,'email','errere@fgfdfd.com')
 #print(cl.data[0].email)
